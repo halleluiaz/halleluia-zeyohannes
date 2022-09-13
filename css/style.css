@@ -51,8 +51,8 @@ h3{
 /*
     for the p, figcaption, ul, and li elements, the default font sizes were too small 
     to be easily read so I used the next few rules to take care of this. Additionally,
-    I wanted to center my figures so that there wouldn't be too much empty space 
-    on the right side of the figures.
+    I wanted to center my figures so that there wouldn't be too much empty space on the 
+    right side of them. 
 */
 p{
     font-size: 1.5em;
@@ -80,6 +80,16 @@ figcaption{
 */
 #copyright{
     font-size: 1em;
+}
+
+/*
+    For the same reason as above, I centered the image I use as a visual for a list using 
+    the id attribute
+*/
+#list-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*
    When validating index.html one of the errors that came up was that the attribute frameborder
@@ -139,6 +149,7 @@ table, th, td {
 th, td{
     padding: 10px;
 }
+
 /*
    To increase readability, I chose to add a hover color to highlight
    rows in my table. It adds contrast and draws the users eyes to the row 
