@@ -68,6 +68,17 @@ figcaption, ul, li{
 .video-border{
     border: 0px;
 }
+
+/*
+   The class is used to seperate the CSS validation icon's styling from the
+   html source code. As copied from the validatation site, the style attribute 
+   would have been in the index.html file.
+*/
+.validation-icon{
+    border: 0px;
+    width: 88px;
+    height: 31px;
+}
 /*
     From here down, the selectors are all related to the table on my webpage. The default
     properties made the table more difficult to read and very cramped. Each selector has 
