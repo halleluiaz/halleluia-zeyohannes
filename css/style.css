@@ -74,6 +74,14 @@ figcaption{
 }
 
 /*
+   Since I used a paragragh element for the copyright aknowledgement at the bottom of the 
+   page, I wanted to make sure that the text for it wasn't the same size as other text 
+   on the page. Using the id attribute allows me to make this change.
+*/
+#copyright{
+    font-size: 1em;
+}
+/*
    When validating index.html one of the errors that came up was that the attribute frameborder
    is now obselete for the iframe element in HTML5. The fix was to use css, and this class allows me to 
    do the same thing that `frameborder="0"` would do.
