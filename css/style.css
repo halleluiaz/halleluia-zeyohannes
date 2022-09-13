@@ -1,0 +1,118 @@
+/*
+File: styles.css
+GUI Assignment: Set up, GitHub and First Web Page
+Halleluia Zeyohannes, UMass Lowell Computer Science, 
+halleluia_zeyohannes@student.uml.edu
+Copyright (c) 2022 by Halleluia Zeyohannes. All rights reserved. May be freely
+copied or excerpted for educational purposes with credit to the author.
+updated by HZ on September 13, 2022 at 12:50AM
+
+I use this file to style my webpage. I set the background color and format 
+different elements on the page by linking this to index.html.
+*/
+
+/*
+    Formatting the body elements sets the scene for the rest of the webpage's look.
+    Here, I take care of what will apply to the whole page, and in this case, 
+    the color and text font of the site.
+*/
+body{
+    background-color: #ccabf5;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*
+   I use the h1 element to display the name of the webpage so this formatting 
+   makes it front and center with the largest font size and center alignment.
+*/
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+/*
+    Since h2 elements are used for splitting up the page's information into 
+    digestable sections on my site, it has the second-largest font
+*/
+h2{
+    text-align: left;
+    font-size: 2.5em;
+}
+
+/*
+   Once again, I use the h3 element to divide my content into subtopics and use the 
+   third largest font 
+*/
+h3{
+    text-align: left;
+    font-size: 2em;
+}
+
+/*
+    for the p, figcaption, ul, and li elements, the default font sizes were too small 
+    to be easily read so I used the following two sections to take care of this.
+*/
+p{
+    font-size: 1.5em;
+}
+
+figcaption, ul, li{
+    font-size: 1.25em;
+}
+
+/*
+   When validating index.html one of the errors that came up was that the attribute frameborder
+   is now obselete for the iframe element in HTML5. The fix was to use css, and this class allows me to 
+   do the same thing that `frameborder="0"` would do.
+*/
+.video-border{
+    border: 0px;
+}
+/*
+    From here down, the selectors are all related to the table on my webpage. The default
+    properties made the table more difficult to read and very cramped. Each selector has 
+    is explained below. Overall, these properties were chosen with readability in mind.
+*/
+table{
+    font-size: 1.5em;
+    width: 80%;
+}
+
+/*
+    I wanted to center my table and came across this class on W3 Schools
+
+    https://www.w3schools.com/howto/howto_css_table_center.asp
+    https://www.w3schools.com/css/css_align.asp
+*/
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+   Adding this border helps "ground" the table since it was orginally just the
+   text showing. Using this border makes it clear where the table and its cells 
+   begin and end.
+*/
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+}
+
+/*
+   Since the data in the table cells were almost on the border of the table,
+   I added padding so give them space and make the table easier to read.
+*/
+th, td{
+    padding: 10px;
+}
+/*
+   To increase readability, I chose to add a hover color to highlight
+   rows in my table. It adds contrast and draws the users eyes to the row 
+   they are hovering over.
+
+   https://www.w3schools.com/css/css_table_style.asp
+*/
+tr:hover{
+    background-color: #eda342;
+}
