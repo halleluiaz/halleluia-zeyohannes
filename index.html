@@ -12,22 +12,24 @@ hobbies, books I've read, and the places I've traveled to.
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Halleluia Zeyohannes</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-      <!--Name of the Website-->
+</head>
+
+<body>
+    <!--Name of the Website-->
     <h1>HALLELUIA ZEYOHANNES</h1>
 
     <!--Introduction summarizes the content of the page-->
     <h2>Introduction</h2>
-        <p>Hello! My name is Halleluia Zeyohannes, a senior at UMass Lowell studying
-             Computer Science. In my free time, I enjoy playing Pokémon games, 
-             reading books, learning new languages, and trying out new food. When I 
-             get the opprotunity, I love to travel as well.
-        </p>
+    <p>Hello! My name is Halleluia Zeyohannes, a senior at UMass Lowell studying
+        Computer Science. In my free time, I enjoy playing Pokémon games,
+        reading books, learning new languages, and trying out new food. When I
+        get the opprotunity, I love to travel as well.
+    </p>
 
     <!--
         The following three h2 sections are used to organize information clearly on the page, 
@@ -36,333 +38,363 @@ hobbies, books I've read, and the places I've traveled to.
         All images are my own unless otherwise stated.
     -->
     <h2>Fun Facts about Me</h2>
-       <ul>
-           <li>My favorite color is lavender.</li>
-           <li>I did synchronized swimming(also known as artistic swimming) for 3 years.</li>
-           <li>I did three sports in high school: swimming, basketball, and outdoor track & field.</li>
-           <li>I can speak Amharic fluently and can hold a basic conversation in Spanish.</li>
-           <li>I love to bake but not to cook. I recently made a delicious Biscoff
-               tiramisu for my aunt's birthday. You can find the recipe 
-               <!--
-                   While testing, I found that clicking links would open them in the same tab 
-                   that the site was open in. I found out that I could change this by using the 
-                   target attribute and setting it to _blank here
-                   https://www.w3schools.com/html/html_links.asp
+    <!--
+        Using the ul and li elements allows me to quick relay short points about 
+        myself in an unordered list.
+    -->
+    <ul>
+        <li>My favorite color is lavender.</li>
+        <li>I did synchronized swimming(also known as artistic swimming) for 3 years.</li>
+        <li>I did three sports in high school: swimming, basketball, and outdoor track & field.</li>
+        <li>I can speak Amharic fluently and can hold a basic conversation in Spanish.</li>
+        <li>I love to bake but not to cook. I recently made a delicious Biscoff
+            tiramisu for my aunt's birthday. You can find the recipe
+            <!--
+                The a element allows me to insert a link and hyperlink specific text 
+                on the webpage.
 
-                   Biscoff Tiramisu recipe is from Carve Your Craving
-               -->
-               <a href="https://www.carveyourcraving.com/biscoff-tiramisu/" target="_blank">here</a>.
-           </li>
-           <li>I have been to 4 out of 7 continents.</li>
-           <li>My favorite game is Pokémon Legends: Arceus* and I have played nearly 400 hours.
-               These have been my favorite Pokémon to raise and battle with:
-           </li>
-       </ul>
-       <img id="list-img" src="img/pokemon.png" alt="A box containing the headshots of caught Pokémon and the player's current team">
-       
-       <p>*To learn more about the game and its plot check out Nintendo's page
-           <a href="https://legends.pokemon.com/en-us/" target="_blank">here</a>.
-        </p>
+                While testing, I found that clicking links would open them in the same tab 
+                that the site was open in. I found out that I could change this by using the 
+                target attribute and setting it to _blank here
+                https://www.w3schools.com/html/html_links.asp
+
+                Biscoff Tiramisu recipe is from Carve Your Craving
+            -->
+            <a href="https://www.carveyourcraving.com/biscoff-tiramisu/" target="_blank">here</a>.
+        </li>
+        <li>I have been to 4 out of 7 continents.</li>
+        <li>My favorite game is Pokémon Legends: Arceus* and I have played nearly 400 hours.
+            These have been my favorite Pokémon to raise and battle with:
+        </li>
+    </ul>
+    <!--
+        The img element lets me insert an image on the page. The id attribute 
+        sets apart this element from other img elements so that I can style it
+        different than other img while using an external css style sheet. This is 
+        touched a bit more below and in ~/css/style.css.
+    -->
+    <img id="list-img" src="img/pokemon.png"
+        alt="A box containing the headshots of caught Pokémon and the player's current team">
+
+    <p>*To learn more about the game and its plot check out Nintendo's page
+        <a href="https://legends.pokemon.com/en-us/" target="_blank">here</a>.
+    </p>
 
     <h2>Halle's Library</h2>
-        <p>Take a look at what I've read recently. Clicking on the titles will take you to
-            the Goodreads website for more information on the book!
-        </p> 
+    <p>Take a look at what I've read recently. Clicking on the titles will take you to
+        the Goodreads website for more information on the book!
+    </p>
 
+    <!--
+        This table organzies the information of a few books I've read and my
+        thoughts on them and each column is labelled with a header describing
+        what it contains. 
+
+        class center is used to center the table on the webpage. Further comments
+        in ~/css/style.css.
+
+        https://www.w3schools.com/howto/howto_css_table_center.asp  
+    -->
+    <table class="center">
         <!--
-            This table organzies the information of a few books I've read and my
-            thoughts on them and each column is labelled with a header describing
-            what it contains. 
-
-            class center is used to center the table on the webpage. Further comments
-            in style.css.
-
-            https://www.w3schools.com/howto/howto_css_table_center.asp  
+            Each tr element defines a row, and each th element specifies a header 
+            for each column in the table.
         -->
-        <table class="center">
-            <tr>
-                <th>Cover</th>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Rating</th>
-                <th>Review</th>
-            </tr>
-            <tr>
-                <td><img src="img/throne-of-glass.png" alt="Throne of Glass 
+        <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Rating</th>
+            <th>Review</th>
+        </tr>
+        <tr>
+            <td><img src="img/throne-of-glass.png" alt="Throne of Glass 
                     cover portraying a female assasin with long white hair and 
                     two weapons">
-                </td>
-                <td><a href="https://www.goodreads.com/book/show/7896527-throne-of-glass" target="_blank"><i>Throne of Glass</i></a></td>
-                <td>Sarah J. Maas</td>
-                <td>3/5</td>
-                <td><i>Throne of Glass</i> has an interesting, though not very 
-                    original, premise and there are some twists that kept me 
-                    hooked to the end. While it was an enjoyable read, it 
-                    didn't meet my expectations; I read the book because so 
-                    many people loved it but it didn't live up to the hype for 
-                    me.
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/deadly-education.png" title="A Deadly Education 
+            </td>
+            <!--
+                Using the i element allows me to format the title of the books 
+                in the table correctly according to English style standards.
+            -->
+            <td><a href="https://www.goodreads.com/book/show/7896527-throne-of-glass" target="_blank"><i>Throne of
+                        Glass</i></a></td>
+            <td>Sarah J. Maas</td>
+            <td>3/5</td>
+            <td><i>Throne of Glass</i> has an interesting, though not very
+                original, premise and there are some twists that kept me
+                hooked to the end. While it was an enjoyable read, it
+                didn't meet my expectations; I read the book because so
+                many people loved it but it didn't live up to the hype for
+                me.
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/deadly-education.png" title="A Deadly Education 
                     cover portraying an eye with rays of light coming out of it,
                      surrounded by the phases of the lunar cycle and a sword 
                      from the bottom pointing at a book">
-                    </td>
-                <td><a href="https://www.goodreads.com/book/show/50548197-a-deadly-education" target="_blank">
+            </td>
+            <td><a href="https://www.goodreads.com/book/show/50548197-a-deadly-education" target="_blank">
                     <i>A Deadly Education</i>
-                    </a>
-                </td>
-                <td>Naomi Novik</td>
-                <td>Reading in Progess</td>
-                <td>So far, I'm loving <i>A Deadly Education</i>. I haven't read
-                     any books with a similar magic system before and the danger
-                      it can pose is intruging. In addition to getting used to 
-                      the power system, the progession of the book is somewhat 
-                      slow which can make it hard to read, but I'm looking 
-                      forward to how it ends.
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/red-pyramid.png" alt="The Red Pyramid cover 
+                </a>
+            </td>
+            <td>Naomi Novik</td>
+            <td>Reading in Progess</td>
+            <td>So far, I'm loving <i>A Deadly Education</i>. I haven't read
+                any books with a similar magic system before and the danger
+                it can pose is intruging. In addition to getting used to
+                the power system, the progession of the book is somewhat
+                slow which can make it hard to read, but I'm looking
+                forward to how it ends.
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/red-pyramid.png" alt="The Red Pyramid cover 
                     portaying two kids in the midst of a battle or high 
                     tension situation">
-                </td>
-                <td><a href="https://www.goodreads.com/book/show/7090447-the-red-pyramid" target="_blank">
+            </td>
+            <td><a href="https://www.goodreads.com/book/show/7090447-the-red-pyramid" target="_blank">
                     <i>The Red Pyramid</i>
-                    </a>
-                </td>
-                <td>Rick Riordan</td>
-                <td>5/5</td>
-                <td>One of my all time favorite books and series. I read 
-                     <i>The Red Pyramid</i> as a child because of my interests 
-                     in Egyptian mythology and how Rick brought it to life in 
-                     this adventure. I recently reread it and the nostolgia makes
-                     it 10 times better!
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/spy-family.png" title="Spy x Family vol. 5 cover 
+                </a>
+            </td>
+            <td>Rick Riordan</td>
+            <td>5/5</td>
+            <td>One of my all time favorite books and series. I read
+                <i>The Red Pyramid</i> as a child because of my interests
+                in Egyptian mythology and how Rick brought it to life in
+                this adventure. I recently reread it and the nostolgia makes
+                it 10 times better!
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/spy-family.png" title="Spy x Family vol. 5 cover 
                      portraying a man in a military uniform sitting on a chair 
                      over spy gear and a gun while holding his uniform hat and 
                      a boquet of flowers.">
-                </td>
-                <td><a href="https://www.goodreads.com/book/show/52757974-spy-x-family-vol-1" target="_blank">
+            </td>
+            <td><a href="https://www.goodreads.com/book/show/52757974-spy-x-family-vol-1" target="_blank">
                     <i>Spy x Family</i> series
-                    </a>
-                </td>
-                <td>Tatsuya Endo</td>
-                <td>5/5</td>
-                <td>I started reading <i>Spy x Family</i> because the facial 
-                     expressions and personality of one of the main characters 
-                     went viral on social media. Once I started reading the 
-                     series, I couldn't stop until there were no more pushlished
-                     English versions. While the plot is decent, the 
-                     characterizations in the series really make it lovable and 
-                     hilarious. The premise makes for a blend of comedy and 
-                     family good feels that you just can't <i>not</i> enjoy.
-                </td>
-            </tr>
-        </table>
+                </a>
+            </td>
+            <td>Tatsuya Endo</td>
+            <td>5/5</td>
+            <td>I started reading <i>Spy x Family</i> because the facial
+                expressions and personality of one of the main characters
+                went viral on social media. Once I started reading the
+                series, I couldn't stop until there were no more pushlished
+                English versions. While the plot is decent, the
+                characterizations in the series really make it lovable and
+                hilarious. The premise makes for a blend of comedy and
+                family good feels that you just can't <i>not</i> enjoy.
+            </td>
+        </tr>
+    </table>
 
     <h2>Learning about the World</h2>
-        <p>Due to COVID, I haven't been able to travel as much as I want to.
-             However, I was lucky to be able to go on three different trips
-             just before the pandemic, in 2019. As I mentioned, I love learning 
-             languages and these experiences allowed me to put my practice to 
-             the test in the most challenging way- with native speakers!
-        </p>
+    <p>Due to COVID, I haven't been able to travel as much as I want to.
+        However, I was lucky to be able to go on three different trips
+        just before the pandemic, in 2019. As I mentioned, I love learning
+        languages and these experiences allowed me to put my practice to
+        the test in the most challenging way- with native speakers!
+    </p>
 
-        <!--
-            I used the h3 elements to once again divide the page since the topics
-            I discuss here are subtopics. 
-        -->
-        <h3>Spain</h3>
-            <p>During the 2018-2019 school year, I got chosen along with several
-                classmates to be a part of the Spanish Exchange Program. In March
-                2019, we went to Collado Villalba, Spain for two weeks, where the 
-                exchange school was and our Spaniard partners lived. We got to 
-                travel to other cities of Spain as well, such as Toledo, Granada, 
-                Segoiva, and Madrid, the country's capital. The two weeks were spent
-                learning about Spain's history and culture, especially putting the 
-                Spanish we learned in class to the test. It was truly one of the 
-                most memorable times of my life and an irreplaceable experience. 
-                This blog is where the other American students and I shared 
-                our experience:
-                <a href="https://spanishexchangeblog.wordpress.com" target="_blank">BHS Spanish Exchange Blog</a>
-            </p>
-            <!--
-                I wanted to include a caption for my photos and came across the
-                figure element. This link provided all the information I needed
-                to use it here.
-                https://stackoverflow.com/questions/10128950/how-to-write-a-caption-under-an-image
-            -->
-            <figure>
-                <img src="img/spanish-exchange.png" title="Students from Spanish Exchange gathered around a table smiling">
-                <figcaption>Students from the Spanish Exchange.</figcaption>
-            </figure>
-            <figure>
-                <img src="img/principe-snack.png" alt="A bunch of Principe cookies at checkout">
-                <figcaption>A favorite snack among the American students was the Principe cookies.</figcaption>
-            </figure>
-            <!--
-                After our trip to Spain, a friend made a video slideshow of images and
-                videos we all took in Spain and while the Spaniards visted us in America.
-                Since it was posted on YouTube, I found the iframe element on the W3 Schools
-                site that allowed me to post the YouTube video directly on the page.
+    <!--
+        I used the h3 elements to once again divide the page since the topics
+        I discuss here are subtopics. 
+    -->
+    <h3>Spain</h3>
+    <p>During the 2018-2019 school year, I got chosen along with several
+        classmates to be a part of the Spanish Exchange Program. In March
+        2019, we went to Collado Villalba, Spain for two weeks, where the
+        exchange school was and our Spaniard partners lived. We got to
+        travel to other cities of Spain as well, such as Toledo, Granada,
+        Segoiva, and Madrid, the country's capital. The two weeks were spent
+        learning about Spain's history and culture, especially putting the
+        Spanish we learned in class to the test. It was truly one of the
+        most memorable times of my life and an irreplaceable experience.
+        This blog is where the other American students and I shared
+        our experience:
+        <a href="https://spanishexchangeblog.wordpress.com" target="_blank">BHS Spanish Exchange Blog</a>
+    </p>
+    <!--
+        I wanted to include a caption for my photos and came across the
+        figure element. This link provided all the information I needed
+        to use it here.
+        https://stackoverflow.com/questions/10128950/how-to-write-a-caption-under-an-image
 
-                https://www.w3schools.com/html/html_youtube.asp
+        The figure element allows me to associate an image and text together so that I can style them.
+    -->
+    <figure>
+        <img src="img/spanish-exchange.png" title="Students from Spanish Exchange gathered around a table smiling">
+        <figcaption>Students from the Spanish Exchange.</figcaption>
+    </figure>
+    <figure>
+        <img src="img/principe-snack.png" alt="A bunch of Principe cookies at checkout">
+        <figcaption>A favorite snack among the American students was the Principe cookies.</figcaption>
+    </figure>
+    <!--
+        After our trip to Spain, a friend made a video slideshow of images and
+        videos we all took in Spain and while the Spaniards visted us in America.
+        Since it was posted on YouTube, I found the iframe element on the W3 Schools
+        site that allowed me to post the YouTube video directly on the page. 
+        I'm once again adding a class to this element to style it in the external 
+        style sheet.
 
-                Anderson Nouv helped me with this by pointing out I could copy the embedded link from
-                YouTube.
+        https://www.w3schools.com/html/html_youtube.asp
+
+        Anderson Nouv helped me with this by pointing out I could copy the embedded link from
+        YouTube.
                 
-                This video was compiled and created by Jackie Damato, 2019 and used with written consent. 
-            -->
-            <figure class="video-border">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5PWKaZiTvy0" title="YouTube video player" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-                <figcaption>My friend and fellow exchange student Jackie Damato complied a bunch of photos and videos we took 
-                    into this video!
-                </figcaption>
-            </figure>
+        This video was compiled and created by Jackie Damato, 2019 and used with written consent. 
+    -->
+    <figure class="video-border">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5PWKaZiTvy0" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <figcaption>My friend and fellow exchange student Jackie Damato complied a bunch of photos and videos we took
+            into this video!
+        </figcaption>
+    </figure>
 
-        <h3>Ethiopia</h3>
-            <p>
-                In the summer of 2019, I went to Ethiopia for the second time in my life.
-                My family is from there so the purpose of the trip was to visit family that 
-                my parents hadn't seen in a long time. We mainly stayed in the capital 
-                Addis Ababa where most of my family resides. I even got to meet some family 
-                that lives in France because they were visiting at the same time! 
-                My paternal grandmother and some other patenal relatives live in Axum, a 
-                city in the northern Tigray region so we visited them and saw the 
-                <i>hawelti</i>, or obelisks.
-            </p>
-            <figure>
-                <img src="img/family-addis.png" title="Family photo on the steps outside of a home">
-                <figcaption>My family in Addis Ababa.</figcaption>
-            </figure>
-            <figure>
-                <img src="img/sneaking-into-photo.png" title="Two people getting their picture taken as someone sneaks into the frame">
-                <figcaption>This is a silly photo of me sneaking into a photo of my dad and older cousin.</figcaption>
-            </figure>
-            <figure>
-                <img src="img/axum-hawelti.png" alt="People walking at the site of Axum Obelisks">
-                <figcaption>The site of Axum <i>Hawelti</i>; my brother and I are closest to the camera.</figcaption>
-            </figure>
+    <h3>Ethiopia</h3>
+    <p>
+        In the summer of 2019, I went to Ethiopia for the second time in my life.
+        My family is from there so the purpose of the trip was to visit family that
+        my parents hadn't seen in a long time. We mainly stayed in the capital
+        Addis Ababa where most of my family resides. I even got to meet some family
+        that lives in France because they were visiting at the same time!
+        My paternal grandmother and some other patenal relatives live in Axum, a
+        city in the northern Tigray region so we visited them and saw the
+        <i>hawelti</i>, or obelisks.
+    </p>
+    <figure>
+        <img src="img/family-addis.png" title="Family photo on the steps outside of a home">
+        <figcaption>My family in Addis Ababa.</figcaption>
+    </figure>
+    <figure>
+        <img src="img/sneaking-into-photo.png"
+            title="Two people getting their picture taken as someone sneaks into the frame">
+        <figcaption>This is a silly photo of me sneaking into a photo of my dad and older cousin.</figcaption>
+    </figure>
+    <figure>
+        <img src="img/axum-hawelti.png" alt="People walking at the site of Axum Obelisks">
+        <figcaption>The site of Axum <i>Hawelti</i>; my brother and I are closest to the camera.</figcaption>
+    </figure>
 
-        <h3>China</h3>
-           <p>
-               Lastly, I went to China right after the end of the Fall 2019 semester. 
-               I went with several other UML students and we mostly stayed in Beijing. However,
-               we got to travel a bit and saw part of the Great Wall of China, which 
-               was super exciting because it had always been something that seemed 
-               unreachable to me as a kid. I also witnessed a traditional tea ceremony 
-               and got to experience the life of a student at a language university 
-               in Beijing. During my time here I made a few Chinese friends that also 
-               taught me some basic Mandarin which was awesome! I also got to try duck 
-               for the very first time as well as kung pao chicken and baozi(my favorite). 
-           </p>
-           <figure>
-               <img src="img/great-wall.png" title="Halleluia Zeyohannes smiling at the camera while at the Great Wall of China">
-               <figcaption>This is a picture of me at the Great Wall of China.</figcaption>
-           </figure>
-           <figure>
-               <img src="img/forbidden-city.png" title="The Tiananmen Gate of the Forbidden City with the portrait of Mao Zedong and Chinese writing on both sides">
-               <figcaption>This is the Tiananmen Gate that connects the Forbidden City with Tiananmen Square.</figcaption>
-           </figure>
-           <figure>
-               <img src="img/summer-palace-souvenir.png" alt="A fan with art of the Great Wall of China with a setting sun, flying hawk, and a tree.">
-               <figcaption>I got this beautiful fan as a souvenir at the Summer Palace.</figcaption>
-           </figure>
-            
-        <h3>Reccomendations</h3>
-            <p>Here are some foods that I tried on my trips that I recommend to everyone.</p>
-            
-            <table class="center">
-                <tr>
-                    <th>Country</th>
-                    <th>Food</th>
-                    <th>Rating</th>
-                    <th>Review</th>
-                </tr>
-                <tr>
-                    <td>Spain</td>
-                    <td>Churros</td>
-                    <td>4/5</td>
-                    <td>This snack/dessert is any sweet lovers dream. It's delicious, 
-                        especially served hot and fresh with melted chocolate to dip 
-                        it in! It's crunchy on the outside and warms you up on a cold 
-                        day. I haven't had churros quite like the ones I had in Madrid. 
-                        I look forward to returning to Spain for many reasons, and this 
-                        is one of them.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Spain</td>
-                    <td>Tortilla Española</td>
-                    <td>5/5</td>
-                    <td>In English, this is called a Spanish omelette. Tortilla española is 
-                        a national dish and eaten often. I love food with egg and this dish 
-                        was something I always looked forward to eating as a part of the lunch
-                        my exchange "parents" gave me everyday. It's typically served at 
-                        room temperature but I love it when its served hot as well.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Ethiopia</td>
-                    <td>Firfir</td>
-                    <td>Infinity/5</td>
-                    <td>I grew up eating firfir, and my mom makes it so good, but the firfir 
-                        that I ate while staying at my aunt's hotel was some of the best I've 
-                        ever had. Firfir is ripped pieces of injera(a type of flat bread) cooked 
-                        in a spicy stew to soften it, typically doro wot or kai wot. It can have 
-                        cut up pieces of meat like goat, lamb, or beef. Soft foods are always a 
-                        win for me; this dish is top 2, and it's not number 2.
-                    </td>
-                </tr>
-                <tr>
-                    <td>China</td>
-                    <td>Baozi</td>
-                    <td>6/5</td>
-                    <td>Every morning I spent in Beijing, I would go to a street vendor near my 
-                        hotel and get myself 2 beef and green onion baozi for breakfast. Freshly 
-                        steamed, the breaded dumpling has a soft outside and savory filling that 
-                        I looked forward to everyday. The last day I was there, I got 4 just to 
-                        take with me to the airport.
-                    </td>
-                </tr>
-                <tr>
-                    <td>China</td>
-                    <td>Iced Black Tea with Vanilla Ice Cream</td>
-                    <td>5/5</td>
-                    <td>In a shopping center near my hotel, there was a boba shop called 
-                        A Little Tea that me and my friends frequented. This drink was the 
-                        reason why. Unfortunately for us, they only have store locations 
-                        in China so we got it as much as we could while we had the chance. 
-                        I've tried making it at home; while it tastes good, it isn't the same 
-                        and I can't wait to go back.
-                    </td>
-                </tr>
-            </table>
-            <!--
-                This just adds Copyright acknowledgment to the bottom of the webpage.
-            -->
-            <p id="copyright">Copyright ©2022 Halleluia Zeyohannes</p>
+    <h3>China</h3>
+    <p>
+        Lastly, I went to China right after the end of the Fall 2019 semester.
+        I went with several other UML students and we mostly stayed in Beijing. However,
+        we got to travel a bit and saw part of the Great Wall of China, which
+        was super exciting because it had always been something that seemed
+        unreachable to me as a kid. I also witnessed a traditional tea ceremony
+        and got to experience the life of a student at a language university
+        in Beijing. During my time here I made a few Chinese friends that also
+        taught me some basic Mandarin which was awesome! I also got to try duck
+        for the very first time as well as kung pao chicken and baozi(my favorite).
+    </p>
+    <figure>
+        <img src="img/great-wall.png"
+            title="Halleluia Zeyohannes smiling at the camera while at the Great Wall of China">
+        <figcaption>This is a picture of me at the Great Wall of China.</figcaption>
+    </figure>
+    <figure>
+        <img src="img/forbidden-city.png"
+            title="The Tiananmen Gate of the Forbidden City with the portrait of Mao Zedong and Chinese writing on both sides">
+        <figcaption>This is the Tiananmen Gate that connects the Forbidden City with Tiananmen Square.</figcaption>
+    </figure>
+    <figure>
+        <img src="img/summer-palace-souvenir.png"
+            alt="A fan with art of the Great Wall of China with a setting sun, flying hawk, and a tree.">
+        <figcaption>I got this beautiful fan as a souvenir at the Summer Palace.</figcaption>
+    </figure>
 
-           <!--
-               The following is the html for the CSS validation icon. style.css went through 
-               the W3C CSS Validation and this html code was provided to add to the webpage.
+    <h3>Reccomendations</h3>
+    <p>Here are some foods that I tried on my trips that I recommend to everyone.</p>
 
-               style attribute removed and styling to this icon is done in the css stylesheet.
-           -->
-           <p>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img class="validation-icon"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss"
-                    alt="Valid CSS!">
-            </a>
-        </p>
-  </body>
+    <table class="center">
+        <tr>
+            <th>Country</th>
+            <th>Food</th>
+            <th>Rating</th>
+            <th>Review</th>
+        </tr>
+        <tr>
+            <td>Spain</td>
+            <td>Churros</td>
+            <td>4/5</td>
+            <td>This snack/dessert is any sweet lovers dream. It's delicious,
+                especially served hot and fresh with melted chocolate to dip
+                it in! It's crunchy on the outside and warms you up on a cold
+                day. I haven't had churros quite like the ones I had in Madrid.
+                I look forward to returning to Spain for many reasons, and this
+                is one of them.
+            </td>
+        </tr>
+        <tr>
+            <td>Spain</td>
+            <td>Tortilla Española</td>
+            <td>5/5</td>
+            <td>In English, this is called a Spanish omelette. Tortilla española is
+                a national dish and eaten often. I love food with egg and this dish
+                was something I always looked forward to eating as a part of the lunch
+                my exchange "parents" gave me everyday. It's typically served at
+                room temperature but I love it when its served hot as well.
+            </td>
+        </tr>
+        <tr>
+            <td>Ethiopia</td>
+            <td>Firfir</td>
+            <td>Infinity/5</td>
+            <td>I grew up eating firfir, and my mom makes it so good, but the firfir
+                that I ate while staying at my aunt's hotel was some of the best I've
+                ever had. Firfir is ripped pieces of injera(a type of flat bread) cooked
+                in a spicy stew to soften it, typically doro wot or kai wot. It can have
+                cut up pieces of meat like goat, lamb, or beef. Soft foods are always a
+                win for me; this dish is top 2, and it's not number 2.
+            </td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>Baozi</td>
+            <td>6/5</td>
+            <td>Every morning I spent in Beijing, I would go to a street vendor near my
+                hotel and get myself 2 beef and green onion baozi for breakfast. Freshly
+                steamed, the breaded dumpling has a soft outside and savory filling that
+                I looked forward to everyday. The last day I was there, I got 4 just to
+                take with me to the airport.
+            </td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>Iced Black Tea with Vanilla Ice Cream</td>
+            <td>5/5</td>
+            <td>In a shopping center near my hotel, there was a boba shop called
+                A Little Tea that me and my friends frequented. This drink was the
+                reason why. Unfortunately for us, they only have store locations
+                in China so we got it as much as we could while we had the chance.
+                I've tried making it at home; while it tastes good, it isn't the same
+                and I can't wait to go back.
+            </td>
+        </tr>
+    </table>
+    <!--
+        This just adds Copyright acknowledgment to the bottom of the webpage.
+    -->
+    <p id="copyright">Copyright ©2022 Halleluia Zeyohannes</p>
+
+    <!--
+        The following is the html for the CSS validation icon. style.css went through 
+        the W3C CSS Validation and this html code was provided to add to the webpage.
+
+        style attribute removed and styling to this icon is done in the css stylesheet.
+    -->
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img class="validation-icon" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </p>
+</body>
+
 </html>
