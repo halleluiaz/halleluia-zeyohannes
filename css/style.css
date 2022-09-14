@@ -5,7 +5,7 @@ Halleluia Zeyohannes, UMass Lowell Computer Science,
 halleluia_zeyohannes@student.uml.edu
 Copyright (c) 2022 by Halleluia Zeyohannes. All rights reserved. May be freely
 copied or excerpted for educational purposes with credit to the author.
-updated by HZ on September 13, 2022 at 9:54PM
+updated by HZ on September 13, 2022 at 10:42PM
 
 I use this file to style my webpage. I set the background color and format 
 different elements on the page by linking this to index.html.
@@ -16,7 +16,7 @@ different elements on the page by linking this to index.html.
     Here, I take care of what will apply to the whole page, and in this case, 
     the color and text font of the site.
 */
-body{
+body {
     background-color: #ccabf5;
     font-family: "Times New Roman", Times, serif;
 }
@@ -25,7 +25,7 @@ body{
    I use the h1 element to display the name of the webpage so this formatting 
    makes it front and center with the largest font size and center alignment.
 */
-h1{
+h1 {
     text-align: center;
     font-size: 3em;
 }
@@ -34,7 +34,7 @@ h1{
     Since h2 elements are used for splitting up the page's information into 
     digestable sections on my site, it has the second-largest font
 */
-h2{
+h2 {
     text-align: left;
     font-size: 2.5em;
 }
@@ -43,7 +43,7 @@ h2{
    Once again, I use the h3 element to divide my content into subtopics and use the 
    third largest font 
 */
-h3{
+h3 {
     text-align: left;
     font-size: 2em;
 }
@@ -54,21 +54,23 @@ h3{
     I wanted to center my figures so that there wouldn't be too much empty space on the 
     right side of them. 
 */
-p{
+p {
     font-size: 1.5em;
 }
 
-ul, li{
+ul,
+li {
     font-size: 1.25em;
 }
 
-figure img, figure iframe{
+figure img,
+figure iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-figcaption{
+figcaption {
     font-size: 1.25em;
     text-align: center;
 }
@@ -76,9 +78,10 @@ figcaption{
 /*
    Since I used a paragragh element for the copyright aknowledgement at the bottom of the 
    page, I wanted to make sure that the text for it wasn't the same size as other text 
-   on the page. Using the id attribute allows me to make this change.
+   on the page. Using the id attribute with that specifc element allows me to make this 
+   change.
 */
-#copyright{
+#copyright {
     font-size: 1em;
 }
 
@@ -86,17 +89,18 @@ figcaption{
     For the same reason as above, I centered the image I use as a visual for a list using 
     the id attribute
 */
-#list-img{
+#list-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 /*
    When validating index.html one of the errors that came up was that the attribute frameborder
    is now obselete for the iframe element in HTML5. The fix was to use css, and this class allows me to 
    do the same thing that `frameborder="0"` would do.
 */
-.video-border{
+.video-border {
     border: 0px;
 }
 
@@ -105,7 +109,7 @@ figcaption{
    html source code. As copied from the validatation site, the style attribute 
    would have been in the index.html file.
 */
-.validation-icon{
+.validation-icon {
     border: 0px;
     width: 88px;
     height: 31px;
@@ -116,7 +120,7 @@ figcaption{
     properties made the table more difficult to read and very cramped. Each selector has 
     is explained below. Overall, these properties were chosen with readability in mind.
 */
-table{
+table {
     font-size: 1.5em;
     width: 80%;
 }
@@ -127,7 +131,7 @@ table{
     https://www.w3schools.com/howto/howto_css_table_center.asp
     https://www.w3schools.com/css/css_align.asp
 */
-.center{
+.center {
     margin-left: auto;
     margin-right: auto;
 }
@@ -137,7 +141,9 @@ table{
    text showing. Using this border makes it clear where the table and its cells 
    begin and end.
 */
-table, th, td {
+table,
+th,
+td {
     border: 1px solid;
     border-color: purple;
     text-align: center;
@@ -147,7 +153,8 @@ table, th, td {
    Since the data in the table cells were almost on the border of the table,
    I added padding so give them space and make the table easier to read.
 */
-th, td{
+th,
+td {
     padding: 10px;
 }
 
@@ -158,6 +165,6 @@ th, td{
 
    https://www.w3schools.com/css/css_table_style.asp
 */
-tr:hover{
+tr:hover {
     background-color: #eda342;
 }
